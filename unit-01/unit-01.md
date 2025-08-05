@@ -1,5 +1,5 @@
 # Unit 1
-[Contents](../README.md)
+[Contents](../README.md) [Next](../unit-02/unit-02.md)
 
 ## The Staff, Notes and Pitches
 
