@@ -1,6 +1,8 @@
 # Unit 1
 [Contents](../README.md) [Next](../unit-02/unit-02.md)
 
+The mup files used to create the pictures in this lesson are available in the [mups/](./mups/) directory of this unit.
+
 ## The Staff, Notes and Pitches
 
 Music is written on a *staff* of five lines and the four spaces between.

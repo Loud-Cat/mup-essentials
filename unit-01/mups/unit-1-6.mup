@@ -1,0 +1,67 @@
+//Mup-Arkkra
+//Unit 1.6: Ledger Lines (continued)
+
+newscore leftmargin=0
+
+score
+clef=treble
+stafflines=5
+
+time=4/1
+printedtime=""
+pad=2.5
+
+
+music
+1: 1g+; a+; b+; c++;
+bar hidechanges =_bar;
+
+left (_staff.1.e + 4, _bar.n) "\s(10)" + \
+"More than one ledger line may be added to extend the lower and upper ranges of the grand staff.\n" + \
+"The next higher notes the treble staff are G, A, B and C.\n" + \
+"The next lower notes of the bass staff are F, E, D and C."
+
+newscore rightmargin=auto scoresep=10
+
+score
+clef=bass
+stafflines=5
+pad=2.5
+time=4/1
+printedtime=""
+
+music
+1: 1f-; e-; d-; c-;
+bar hidechanges = _bar;
+
+newscore rightmargin=auto
+
+score
+staffs=2
+brace=1-2
+barstyle=1-2
+pad=1.75
+
+time=29/1
+printedtime=""
+
+staff 1
+clef=treble
+
+staff 2
+clef=bass
+
+music
+
+left (_staff.1.w + 8, _staff.1.n - 4) \
+"All the notes on the grand staff from bass clef Low C to treble clef High C:"
+
+
+// 13 spaces (12 + 1) and 16 notes
+// 16 notes and 13 spaces
+1: 1/8.s; 1s; b-; c; d; e; f; g; a; b; c+; d+; e+; f+; g+; a+; b+; c++;
+2: c-; d-; e-; f-; g-; a-; b-; c; d; e; f; g; a; b; c+; d+; 1/8.s; 1s;
+bar
+
+newscore rightmargin=auto
+

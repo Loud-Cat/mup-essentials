@@ -1,0 +1,74 @@
+//Mup-Arkkra
+//Unit 1.5: Ledger Lines
+
+newscore leftmargin=0
+
+score
+clef=treble
+stafflines=5
+pad=5
+
+time=3/1
+printedtime=""
+
+music
+1: b-; c; d;
+bar hidechanges = _bar;
+
+
+left (_staff.1.e + 4, _bar.n) \
+"Ledger lines are short lines which are added to extend the range of the\n" + \
+"staff when the notes are too low or too high to be written on the staff."
+
+newscore rightmargin=auto
+
+score
+clef=bass
+stafflines=5
+
+time=3/1
+printedtime=""
+pad=5
+
+
+music
+1: b; c+; d+;
+bar hidechanges =_bar;
+
+
+left (_staff.1.e + 4, _bar.n) \
+"The notes in the middle range of the grand staff are B, C, and D.\n" + \
+"They can be written on ledger lines in both the bass and treble staffs."
+
+
+//left (_staff.1.e + 8, _bar.n) \
+//"More than one ledger line may be added to extend\n" + \
+//"the lower and upper ranges of the grand staff.\n" + \
+//"The next higher notes the treble staff are G, A, B and C."
+
+
+newscore rightmargin=auto scoresep=10
+
+score
+staffs=2
+brace=1-2
+barstyle=1-2
+pad=5
+
+time=3/1
+printedtime=""
+
+staff 1
+clef=treble
+
+staff 2
+clef=bass
+
+music
+
+1: b-; c; d;
+2: b; c+; d+;
+bar
+
+newscore rightmargin=auto
+

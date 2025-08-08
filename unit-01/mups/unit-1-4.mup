@@ -1,0 +1,32 @@
+//Mup-Arkkra
+//Unit 1.4: The Grand Staff
+
+newscore leftmargin=0
+
+score
+topmargin=0.75
+
+staffs=2
+brace=1-2
+barstyle=1-2
+
+time=9/1
+printedtime=""
+pad=5
+
+staff 1
+clef=treble
+
+staff 2
+clef=bass
+
+music
+left (_staff.1.w + 8, _staff.1.n + 4) \
+"When the bass and treble staff are connected\nby a brace and a line, they form the Grand staff."
+
+1: 1e; f; g; a; b; c+; d+; e+; f+;
+2: 1g-; a-; b-; c; d; e; f; g; a;
+bar
+
+newscore rightmargin=auto
+

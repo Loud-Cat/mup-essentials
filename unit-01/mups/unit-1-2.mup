@@ -1,0 +1,39 @@
+//Mup-Arkkra
+//Unit 1.2: Treble Clef and Staff
+
+newscore leftmargin=0
+
+score
+topmargin=0.75
+
+time=5/1
+printedtime=""
+pad=10
+
+music
+left (_staff.1.w, _staff.1.n + 8) \
+"In the treble staff, the names of the notes on the lines from bottom to top are E, G, B, D, F.\n" + \
+"The most common way to remember this order is by the phrase \"Every Good Boy Does Fine.\""
+
+1: 1e; g; b; d+; f+;
+lyrics 1: 1;;;;; "E G B D F";
+invisbar
+
+newscore rightmargin=auto
+
+score
+time=4/1
+printedtime=""
+pad=10
+
+music
+
+left (_staff.1.w, _staff.1.n + 3) \
+"The names of the notes in the spaces from bottom to top spell FACE."
+
+1: 1f; a; c+; e+;
+lyrics 1: 1;;;; "F A C E";
+invisbar
+
+newscore rightmargin=auto
+

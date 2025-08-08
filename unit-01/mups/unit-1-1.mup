@@ -1,0 +1,50 @@
+//Mup-Arkkra
+//Unit 1.1: The Staff, Notes and Pitches
+
+newscore leftmargin=0
+
+score
+time=4/4
+printedtime=""
+stafflines=5n
+
+music
+left (_staff.1.w, _staff.1.n + 1) \
+"Music is written on a staff of 5 lines and the spaces in between.\n"
+
+1: [pad 30] ms;
+invisbar
+
+newscore rightmargin=auto
+
+score
+time=4/1
+printedtime=""
+stafflines=5n
+pad=10
+
+music
+left (_staff.1.w, _staff.1.n + 1) \
+"Music notes are the symbols that are placed on the lines and in the spaces."
+
+1: 1g; a; d+; e+;
+invisbar
+
+newscore rightmargin=auto
+
+score
+time=7/1
+printedtime=""
+stafflines=5n
+pad=10
+
+music
+left (_staff.1.w, _staff.1.n + 4) \
+"If the notes appear higher on the staff, they sound higher in pitch.\n" + \
+"If the notes appear lower on the staff, they sound lower in pitch."
+
+1: 1g; c+; a; e; e+; c+; f;
+invisbar
+
+newscore rightmargin=auto
+
